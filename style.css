@@ -6,11 +6,11 @@
 }
 
 body {
-  background-color: rgba(25, 150, 108, 0.692);
+  background-color: #52cda5;
 }
 
 div.container {
-  width: 450px;
+  width: 350px;
   margin: auto;
   margin-top: 10vw;
   margin-bottom: 10vw;
@@ -28,22 +28,25 @@ h1.welcome {
 }
 
 input {
-  width: 80%;
+  width: 90%;
   display: block;
   margin: 0 auto 0 auto;
   margin-bottom: 15px;
   text-align: center;
   padding: 10px 0;
   font-size: 20px;
-  background-color: rgba(108, 238, 221, 0.5);
+  background-color: #74ceb6;
   border: 1px solid rgba(255, 255, 255, 0.637);
   border-radius: 5px;
   color: antiquewhite;
-  transition-duration: 1s;
+  transition-duration: 0.4s;
+}
+::placeholder {
+  color: white;
 }
 
 input.one {
-  margin-top: 10px;
+  margin-top: 13px;
 }
 
 input.three {
@@ -53,15 +56,19 @@ input.three {
 }
 
 input.one:hover {
-  background-color: white;
-  width: 100%;
+  background-color: #8ff0d3;
   border: 1px solid rgba(255, 255, 255, 0.637);
 }
 
-input.one:active {
+input.one:focus {
   background-color: white;
   width: 100%;
-  border: 1px solid rgba(255, 255, 255, 0.637);
-
-  appearance: none;
+  color: #58e4a8;
+  outline: none;
 }
+
+input.three {
+  box-shadow: 0 0 20px 5px rgba(255, 192, 203, 0.753);
+}
+
+/*Apartado de efectos especiales para el background*/
