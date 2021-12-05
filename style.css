@@ -74,3 +74,29 @@ input.three {
 }
 
 /*Apartado de efectos especiales para el background*/
+div.one {
+  width: 200px;
+  height: 200px;
+  background-color: #87e7c77e;
+  position: absolute;
+  animation-name: up;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  z-index: -1;
+}
+
+@keyframes up {
+  0% {
+    background-color: #87e7c77e;
+    left: 50%;
+    bottom: 0px;
+  }
+
+  100% {
+    background-color: #87e7c77e;
+    left: 50%;
+    bottom: 100%;
+    transform: rotate(360deg);
+  }
+}
